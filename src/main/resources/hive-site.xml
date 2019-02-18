@@ -1,0 +1,57 @@
+<configuration>
+
+<property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>/user/hive/warehouse</value>
+</property>
+
+<!--配置Mysql的连接URL-->
+<property>
+	<name>javax.jdo.option.ConnectionURL</name>
+	<value>jdbc:mysql://192.168.198.10:3306/hive?createDatabaseIfNotExist=true&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8</value>
+</property>
+
+<!--配置连接mysql的驱动-->
+<property>
+	<name>javax.jdo.option.ConnectionDriverName</name>
+	<value>com.mysql.jdbc.Driver</value>
+</property>
+
+<!--配置连接Mysql的用户名-->
+<property>
+	<name>javax.jdo.option.ConnectionUserName</name>
+	<value>root</value>
+</property>
+
+<!--配置连接Mysql的密码-->
+<property>
+	<name>javax.jdo.option.ConnectionPassword</name>
+	<value>123456</value>
+</property>
+
+<!--打印当前使用哪个db-->
+<property>
+	<name>hive.cli.print.current.db</name>
+	<value>true</value>
+</property>
+
+<!--打印列名-->
+<property>
+	<name>hive.cli.print.header</name>
+	<value>true</value>
+</property>
+
+<!--不打印表名-->
+<property>
+	<name>hive.resultset.use.unique.column.names</name>
+	<value>false</value>
+</property>
+
+<!--设置强制分桶-->
+<property>
+	<name>hive.enforce.bucketing</name>
+	<value>true</value>
+</property>
+
+
+</configuration>

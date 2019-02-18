@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+
+<!--指定HADOOP所使用的文件系统的schema，也就是hdfs的老大（namenode）所在的机器地址-->
+<property>
+	<name>fs.defaultFS</name>
+	<value>hdfs://hadoop01:9000</value>
+</property>
+
+<!--buffer的大小-->
+<property>
+	<name>io.file.buffer.size</name>
+	<value>4096</value>
+</property>
+
+<!--hadoop运行时产生的临时文件的存储目录-->
+<property>
+	<name>hadoop.tmp.dir</name>
+	<value>/home/hadoop/develop_env/hadoop-2.7.1/hadoopdata/tmp</value>
+</property>
+
+</configuration>
